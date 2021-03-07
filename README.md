@@ -1,6 +1,6 @@
 # vite-vue3-music-demo
 
-这是一个使用 vite + vue3 写的一个简单的 music demo
+这是一个使用 vite + vue3 + ts 写的一个简单的 music demo
 
 使用方式：
 
