@@ -14,7 +14,7 @@ cd NeteaseCloudMusicApi && yarn && yarn start
 然后进入本项目：
 
 ```bash
-git clone 
+git clone https://github.com/Jsmond2016/vue3-music.git
 
 cd vue3-music
 
