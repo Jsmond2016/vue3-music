@@ -5,22 +5,22 @@
     "dev": "vite",
     "build": "vite build",
     "serve": "vite preview",
+    "commit": "cz",
     "precommit": "lint-staged && npm run test",
     "lint": "eslint src --fix --ext .js,.vue"
   },
   "dependencies": {
     "vue": "^3.0.5"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npm run lint",
-      "pre-push": "npm run lint"
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-customizable"
     }
   },
-  "lint-staged": {
-    "src/**/*.{js,vue}": [
-      "npm run lint"
-    ]
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   },
   "devDependencies": {
     "@commitlint/cli": "^12.0.1",
